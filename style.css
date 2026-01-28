@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/*GRANDES PROJETOS E EMPRESAS
+- COMO COMEÇAR DO JEITO CERTO
+    CSS - * CÓDIGO OBRIGATÓRIO
+*/
+
+/*
+
+    seletor = p, button, h3, div...
+    propriedade = color, height, width...
+    valor = red, 16px...
+
+    pixel = unidade de medida / cm, metro
+
+    Classes - apelidos para diferenciar os elementos
+        Sempre vai na tag de ABERTURA
+        toda vez que eu uso uma classe eu tenho que colocar um ponto (.)
+
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif; /*FONTE PADRÃO*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /**/
+}
+
+body {
+    background-image: url("img/mapa.jpg"); /*IMAGEM DE FUNDO*/
+    background-size: cover; /*TAMANHO DO FUNDO*/
+    background-position: center center; /*POSIÇÃO DO FUNDO*/
+    height: 100vh; /*ALTURA DA TELA (View Height)*/
+
+    display: flex; /*FLEXIVEL - ALINHAMENTO DE ITENS*/
+
+    align-items: center; /*ALINHAMENTO VERTICAL*/
+    justify-content: center; /*ALINHAMENTO HORIZONTAL*/ 
+}
+
+.caixa-maior {
+    background-color: #000000f2; /*FUNDO PRETO COM OPACIDADE*/
+    width: 450px; /*LARGURA DA CAIXA*/
+    border-radius: 25px; /*BORDAS ARREDONDADAS*/
+    padding: 20px; /*ESPAÇAMENTO INTERNO*/
+}
+
+.input-texto {
+    width: 100%; /*LARGURA TOTAL*/
+    height: 100px; /*ALTURA FIXA*/
+    border: none; /*TIRAR BORDA PADRÃO*/
+    outline: none; /*TIRAR CONTORNO DE FOCO*/
+    background-color: #ffffff1a; /*FUNDO BRANCO COM OPACIDADE*/
+    color: #ffffff; /*COR DO TEXTO*/
+    border-radius: 15px; /*BORDAS ARREDONDADAS*/
+    font-size: 16px; /*TAMANHO DA FONTE*/
+    padding: 15px; /*ESPAÇAMENTO INTERNO*/
+}
+
+.idioma {
+    width: 100%; /*LARGURA TOTAL*/
+    height: 40px; /*ALTURA FIXA*/   
+    border: none; /*TIRAR BORDA PADRÃO*/
+    border-radius: 20px  20px 2px 2px; /*BORDAS ARREDONDADAS*/
+    outline: none; /*TIRAR CONTORNO DE FOCO*/
+    padding: 10px; /*ESPAÇAMENTO INTERNO*/
+    background-color: #ffffff1a; /*FUNDO BRANCO COM OPACIDADE*/
+    color: #ffffff; /*COR DO TEXTO*/
+}
+
+option {
+    color: #000000; /*COR DO TEXTO*/
+}
+
+button {
+    border: none; /*TIRAR BORDA PADRÃO*/
+    padding: 10px; /*ESPAÇAMENTO INTERNO*/
+    background-color: #ffffff1a; /*FUNDO BRANCO COM OPACIDADE*/
+    border-radius: 50%;
+    cursor: pointer; /*MUDAR O CURSOR AO PASSAR POR CIMA (Maozinha)*/
+}
+
+.controle {
+    display: flex; /*FLEXIVEL - ALINHAMENTO DE ITENS*/
+    align-items: center; /*ALINHAMENTO VERTICAL*/
+    gap: 10px; /*ESPAÇAMENTO ENTRE ITENS*/
+    margin-top: 20px; /*MARGEM SUPERIOR*/
+    margin-bottom: 20px; /*MARGEM INFERIOR*/
+}
+
+.resultado {
+    padding: 15px; /*ESPAÇAMENTO INTERNO*/
+    background-color: #ffffff1a; /*FUNDO BRANCO COM OPACIDADE*/
+    border-radius: 15px; /*BORDAS ARREDONDADAS*/
+}
+
+.titulo-traducao {
+    color: #ffffff; /*COR DO TEXTO*/
+    font-size: 14px; /*TAMANHO DA FONTE*/
+    margin-bottom: 10px; /*MARGEM INFERIOR*/
+}
+
+.traducao {
+    color: #ffffff; /*COR DO TEXTO*/
+    font-size: 18px; /*TAMANHO DA FONTE*/
+}
